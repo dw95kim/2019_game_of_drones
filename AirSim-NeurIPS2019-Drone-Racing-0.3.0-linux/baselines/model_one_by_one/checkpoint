@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/dwkim/Downloads/AirSim_Training/AirSim-NeurIPS2019-Drone-Racing-0.3.0-linux/baselines/model_one_by_one/model.ckpt-0"
+all_model_checkpoint_paths: "/home/dwkim/Downloads/AirSim_Training/AirSim-NeurIPS2019-Drone-Racing-0.3.0-linux/baselines/model_one_by_one/model.ckpt-0"

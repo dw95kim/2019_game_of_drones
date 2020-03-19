@@ -1,0 +1,4 @@
+0) Need to back up the image because if we run the script we cannot get the original image back
+1) Run sample imgs
+2) Run preparing_dataset to change the name to random name 
+3) Use labeling program e.g. OpenLabel, labelImg
