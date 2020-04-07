@@ -35,7 +35,18 @@ Nvidia driver version : 410.15
 > 4. change the number of eval data
 (reference https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)
 
-3. python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_coco.config
+3. 
+PIPELINE_CONFIG_PATH=/home/dwkim/Desktop/LAB/object_detection/training/ssd_mobilenet_v1_coco.config
+MODEL_DIR=/home/dwkim/Desktop/LAB/object_detection/training
+NUM_TRAIN_STEPS=1000000
+SAMPLE_1_OF_N_EVAL_EXAMPLES=1
+python3 model_main.py \
+ 	--pipeline_config_path=${PIPELINE_CONFIG_PATH} \
+ 	--model_dir=${MODEL_DIR} \
+ 	--num_train_steps=${NUM_TRAIN_STEPS} \
+ 	--sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
+ 	--alsologtostderr
+
 ```
 
 ## Export inference graph
